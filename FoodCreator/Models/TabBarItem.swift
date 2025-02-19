@@ -39,7 +39,7 @@ enum TabBarItem: CaseIterable {
         case .favourite:
             return UIImage(systemName: "heart.fill")?.withTintColor(.darkBlue, renderingMode: .alwaysTemplate) ?? .blankImage
         case .planner:
-            return UIImage(systemName: "calendar")?.withTintColor(.darkBlue, renderingMode: .alwaysTemplate) ?? .blankImage
+            return UIImage(resource: .calendar).withTintColor(.darkBlue, renderingMode: .alwaysTemplate)
         }
     }
     
@@ -54,7 +54,7 @@ enum TabBarItem: CaseIterable {
         case .favourite:
             return UIImage(systemName: "heart")?.withTintColor(.defaultGray, renderingMode: .alwaysTemplate) ?? .blankImage
         case .planner:
-            return UIImage(systemName: "calendar")?.withTintColor(.defaultGray, renderingMode: .alwaysTemplate) ?? .blankImage
+            return UIImage(resource: .calendar).withTintColor(.defaultGray, renderingMode: .alwaysTemplate)
         }
     }
     

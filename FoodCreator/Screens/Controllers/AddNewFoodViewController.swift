@@ -33,7 +33,7 @@ class AddNewFoodViewController: UIViewController {
     }
     
     private func setupView() {
-        title = "Add new food"
+        navigationItem.title = "Add new food"
         view.backgroundColor = .systemBackground
         let subView = makeSubView()
         view.addSubview(subView)

@@ -17,7 +17,7 @@ public extension UIViewController {
     
     var backButton: UIBarButtonItem {
         let backButton = UIButton(frame: CGRect(x: .zero, y: .zero, width: 35, height: 35))
-        backButton.setImage(UIImage(systemName: "chevron.left.circle") ?? .blankImage
+        backButton.setImage(UIImage(resource: .backButton)
             .withRenderingMode(.alwaysTemplate), for: .normal)
         backButton.semanticContentAttribute = UIApplication.shared
             .userInterfaceLayoutDirection == .rightToLeft ? .forceLeftToRight : .forceRightToLeft

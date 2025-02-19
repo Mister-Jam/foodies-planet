@@ -30,30 +30,6 @@ final class ApplicationCoordinator: Coordinator {
         navigationController.show(tabBarController, sender: self)
     }
     
-    private func startOnboardingCoordinator() {
-//        let coordinator = OnboardingCoordinator(navigationController: navigationController)
-//        addChild(coordinator)
-//        coordinator.start()
-    }
-    
-    private func startTabBarCoordinator() {
-//        let coordinator = TabBarCoordinator(
-//            navigationController: navigationController)
-//        addChild(coordinator)
-//        coordinator.start()
-    }
-    
-    @objc private func forceLogoutIfNecessary(_ sender: Notification) {
-        startGetStartedCoordinator()
-    }
-    
-    private func startGetStartedCoordinator() {
-//        let coordinator = GetStartedCoordinator(navigationController: navigationController)
-//        childCoordinators = []
-//        addChild(coordinator)
-//        coordinator.start()
-    }
-    
     private func updateTabItems(item: TabBarItem) -> UIViewController {
         let viewController = item.coordinator().rootViewController
         viewController.tabBarItem.image = item.unselectedImageResource.withRenderingMode(.alwaysOriginal)
